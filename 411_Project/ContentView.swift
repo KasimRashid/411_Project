@@ -27,8 +27,8 @@ struct ContentView: View {
                 .foregroundStyle(.white)
                 .cornerRadius(10)
                 
-                Button("other") {
-                    message = "random!"
+                NavigationLink(destination:AxolotlView()) {
+                    Text("Axolotl Facts!")
                 }
                 .padding()
                 .background(.orange)
