@@ -2,7 +2,7 @@ import SwiftUI
 import Playgrounds
 
 struct ContentView: View {
-    @State private var message = "Hello, here is the app!"
+    @State private var message = "Here is the app!"
 
     var body: some View {
         NavigationStack{
@@ -19,8 +19,8 @@ struct ContentView: View {
                 .foregroundStyle(.white)
                 .cornerRadius(10)
                 
-                Button("Going to games") {
-                    message = "games!"
+                NavigationLink(destination: CatMatchingGame()) {
+                    Text("Cat Matching Game")
                 }
                 .padding()
                 .background(.green)
